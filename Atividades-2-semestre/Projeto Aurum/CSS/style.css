@@ -1,50 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    /* Paleta */
-    --fundo: #132437;
-    --bg-home: #010300;
-    --linha-decorativa: #C7CDD6;
-    --texto-suave: #B3C0CF;
-    --branco: #FFFFFF;
-    --amarelo: #F7C13C;
-    --borda-suave: rgba(255, 255, 255, 0.2);
-    --sombra-passo-clara: rgba(145,145,145,0.2);
-    --sombra-passo-escura: rgba(0,0,0,0.5);
-    --sombra-neo-clara: rgba(255,255,255,0.7);
-    --sombra-neo-escura: rgba(0,0,0,0.8);
-
-    /* Tipografia */
-    --fonte: 'Noto Sans', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--fonte);
-}
-
-html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--amarelo) var(--fundo);
-    scroll-behavior: smooth;
-}
-
+/* Define cor do texto e cor de fundo da página */
 body {
     color: var(--branco);
     background-color: var(--bg-home);
-
 }
 
+/* Estiliza o cabeçalho principal */
 .cabecalho {
     display: flex;
     flex-direction: column;
     background-color: var(--fundo);
     box-shadow: 0 1px 0 var(--borda-suave);
-
 }
 
+/* Barra superior do cabeçalho */
 .barra-topo {
     display: flex;
     align-items: center;
@@ -54,10 +22,12 @@ body {
     border-bottom: 1px solid var(--branco);
 }
 
+/* Logo do site */
 .logo {
     width: 4%;
 }
 
+/* Barra de navegação principal */
 .navegacao {
     display: flex;
     justify-content: center;
@@ -67,6 +37,7 @@ body {
     background-color: var(--bg-home);
 }
 
+/* Lista de itens do menu de navegação */
 .lista-menu {
     display: flex;
     align-items: center;
@@ -76,34 +47,38 @@ body {
     width: 100%;
 }
 
+/* Links do menu de navegação */
 .lista-menu a {
     color: var(--branco);
     font-size: 1.2em;
     text-decoration: none;
 }
 
+/* Efeito ao passar o mouse nos links do menu */
 .lista-menu a:hover{
     opacity: 0.5;
 }
 
+/* Item de login no menu */
 .item-login{
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
+/* Ícone de cadeado para login */
 .cadeado{
     width: 20px;
     height: 20px;
 }
 
 /* BANNER */
+/* Seção do banner principal da página */
 .secao-banner {
     background-image: url("../assets/img/Banner\ Home.png");
     background-position: 20% bottom;
     background-repeat: no-repeat;
     background-size: 70%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +87,7 @@ body {
     padding: 0 10%;
 }
 
+/* Textos do banner */
 .textos-banner {
     display: flex;
     flex-direction: column;
@@ -121,18 +97,21 @@ body {
     max-width: 45%;
 }
 
+/* Título principal do banner */
 .titulo-banner-principal {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 12px;
 }
 
+/* Subtítulo do banner */
 .subtitulo-banner {
     text-align: center;
     color: var(--texto-suave);
 }
 
-/* SERVICOS */
+/* SERVIÇOS */
+/* Seção de serviços oferecidos */
 .secao-servicos {
     display: flex;
     flex-direction: column;
@@ -143,12 +122,14 @@ body {
     padding: 5% 10% 15%;
 }
 
+/* Título das seções */
 h2 {
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
+/* Linha decorativa abaixo do título */
 .linha-decorativa {
     width: 220px;
     height: 2px;
@@ -156,6 +137,7 @@ h2 {
     opacity: .4;
 }
 
+/* Cabeçalho da seção */
 .cabecalho-secao {
     display: flex;
     flex-direction: column;
@@ -163,12 +145,14 @@ h2 {
     margin-bottom: 40px;
 }
 
+/* Grade de cartões de serviços */
 .grade-servicos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
+/* Cartão individual de serviço */
 .cartao-servico {
     border-radius: 20px;
     padding: 50px 25px;
@@ -178,11 +162,13 @@ h2 {
     border: 1px solid var(--borda-suave);
 }
 
+/* Ícone do serviço */
 .icone  {
     height: 36px;
     margin-bottom: 10px;
 }
 
+/* Título do cartão de serviço */
 .titulo-cartao {
     margin: 8px 0px;
     font-size: 1.2em;
@@ -190,12 +176,14 @@ h2 {
     color: var(--branco);
 }
 
+/* Descrição do serviço */
 .descricao-cartao {
     color: var(--texto-suave);
     font-size: 0.95em;
 }
 
 /* MONITORAMENTO */
+/* Seção de monitoramento de dispositivos */
 .secao-monitoramento {
     background-image: url(../assets/img/Banner\ monitore\ dispositivos.png);
     background-repeat: no-repeat;
@@ -209,6 +197,7 @@ h2 {
     align-items: center;
 }
 
+/* Título do banner de monitoramento */
 .titulo-banner-meio {
     font-size: 1.8rem;
     text-align: center;
@@ -217,6 +206,7 @@ h2 {
 }
 
 /* COMO FUNCIONA */
+/* Seção explicando como funciona o serviço */
 .secao-como-funciona {
     padding: 5% 10% 10%;
     display: flex;
@@ -225,6 +215,7 @@ h2 {
     height: 100vh;
 }
 
+/* Grade dos passos do funcionamento */
 .grade-passos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -232,6 +223,7 @@ h2 {
     justify-items: center;
 }
 
+/* Cartão de passo */
 .passo {
     display: flex;
     flex-direction: column;
@@ -240,6 +232,7 @@ h2 {
     max-width: 70%;
 }
 
+/* Número do passo */
 .numero-passo {
     display: flex;
     align-items: center;
@@ -255,16 +248,19 @@ h2 {
     margin-bottom: 50px;
 }
 
+/* Título do passo */
 .titulo-passo {
     margin-bottom: 10px;
     font-size: 1.1em;
 }
 
+/* Texto explicativo do passo */
 .texto-passo {
     color: var(--texto-suave);
 }
 
 /* DEPOIMENTOS */
+/* Seção de depoimentos de clientes */
 .secao-depoimentos {
     display: flex;
     flex-direction: column;
@@ -274,12 +270,14 @@ h2 {
     height: 100vh;
 }
 
+/* Grade dos depoimentos */
 .grade-depoimentos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
+/* Cartão individual de depoimento */
 .depoimento {
     display: flex;
     flex-direction: column;
@@ -290,31 +288,37 @@ h2 {
                 10px 10px 4px var(--sombra-passo-escura);
 }
 
+/* Topo do depoimento com foto e nome */
 .topo-depoimento {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
+/* Foto do usuário no depoimento */
 .foto-usuario {
     width: 40px;
     height: 40px;
 }
 
+/* Nome do usuário */
 .nome-usuario {
     font-size: 1em;
 }
 
+/* Cargo do usuário */
 .cargo-usuario {
     color: var(--texto-suave);
     font-size: 0.9em;
 }
 
+/* Texto do depoimento */
 .texto-depoimento {
     color: var(--texto-suave);
     line-height: 1.6;
 }
 
+/* Botão primário de ação */
 .botao-primario {
     background-color: var(--amarelo);
     color: var(--fundo);
@@ -325,11 +329,60 @@ h2 {
     transition: transform 0.15s ease;
 }
 
+/* Efeito ao passar o mouse no botão primário */
 .botao-primario:hover {
     transform: translateY(-10px);
-    background-color: #D7A31D; 
-
+    background-color: #D7A31D;
 }
 
-/* RODAPE */
+/* RODAPÉ */
+/* Seção do rodapé da página */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--fundo);
+    padding: 2% 10%;
+    color: var(--branco);
+    height: 40vh;
+}
 
+/* Conteúdo do rodapé */
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo do rodapé */
+.logo-rodape {
+    width: 200px;
+}
+
+/* Lista de links do rodapé */
+.lista-rodape {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* Links do rodapé */
+li a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+/* Linha divisória do rodapé */
+.linha-divisoria {
+    height: 1px;
+    background-color: var(--borda-suave);
+    margin-top: 20px;
+}
+
+/* Texto de direitos autorais */
+.direitos {
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 1em;
+    margin-top: 20px;
+}
