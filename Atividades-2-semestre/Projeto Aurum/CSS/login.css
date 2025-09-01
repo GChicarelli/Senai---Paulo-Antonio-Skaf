@@ -158,3 +158,39 @@ input {
     color: var(--texto-escuro);
     margin-top: 10px;
 }
+
+.logo-resp {
+    display: none;
+}
+
+
+/* Responsividade - media query */
+
+@media (max-width: 900px) {
+   .container-login {
+    grid-template-columns: 1fr
+   } 
+
+   .painel-esquerdo {
+    margin: 0;
+   }
+
+   .descricao {
+        font-size: 1.1em;
+        max-width: 55%;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-resp {
+        display: inline;
+        margin-bottom: 50px;
+    }
+
+    .forn-login {
+        width: 70%;
+    }
+}

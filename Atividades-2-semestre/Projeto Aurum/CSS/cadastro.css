@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fundo: #132437;
+    --bg-home:#010300;
+    --linha-decorativa:#C7CDD6;
+    --texto-suave:#B3C0CF;
+    --branco: #ffffff;
+    --amarelo: #F7C13C;
+    --borda-suave: rgba(255, 255, 255 0.2);
+    --sombra-passo-clara: rgba(145, 145, 145, 0.2);
+    --sombra-passo-escura: rgb(0, 0, 0, 0.5);
+    --sombra-neo-clara: rgba(255, 255, 255, 0.7);
+    --sombra-neo-escura: rgba(0, 0, 0, 0.8);
+    --texto-escuro: #0C0101;
+    --borda: #313A3C;
+    --erro: #D40000;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    background-color: var(--fundo);
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 60px;
+}
+
+label {
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 60px;
+    margin: 100px 0;
+}
+
+.botao-login {
+    background-color: var(--fundo);
+    color: var(--amarelo);
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 45%;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.botao-login:hover {
+    background-color: #26394E;
+    cursor: pointer;
+}
+
+.voltar {
+    color: var(--fundo);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin: 45px;
+}
+
+/* responsividade */
+@media (max-width: 900px) {
+   .container-login {
+    grid-template-columns: 1fr
+   }
+ 
+.formulario {
+    flex-direction:column;
+    gap: 0px;
+    margin: 30px 0;
+}
+}
