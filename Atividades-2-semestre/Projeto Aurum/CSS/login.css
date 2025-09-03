@@ -1,196 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa a fonte Noto Sans do Google Fonts */
 
 :root {
-    --fundo: #132437;
-    --bg-home:#010300;
-    --linha-decorativa:#C7CDD6;
-    --texto-suave:#B3C0CF;
-    --branco: #ffffff;
-    --amarelo: #F7C13C;
-    --borda-suave: rgba(255, 255, 255 0.2);
-    --sombra-passo-clara: rgba(145, 145, 145, 0.2);
-    --sombra-passo-escura: rgb(0, 0, 0, 0.5);
-    --sombra-neo-clara: rgba(255, 255, 255, 0.7);
-    --sombra-neo-escura: rgba(0, 0, 0, 0.8);
-    --texto-escuro: #0C0101;
-    --borda: #313A3C;
-    --erro: #D40000;
-
+    --fundo: #132437; /* Cor de fundo principal */
+    --bg-home:#010300; /* Cor de fundo secundária */
+    --linha-decorativa:#C7CDD6; /* Cor de linhas decorativas */
+    --texto-suave:#B3C0CF; /* Cor de texto secundário */
+    --branco: #ffffff; /* Branco */
+    --amarelo: #F7C13C; /* Amarelo destaque */
+    --borda-suave: rgba(255, 255, 255 0.2); /* Borda suave */
+    --sombra-passo-clara: rgba(145, 145, 145, 0.2); /* Sombra clara */
+    --sombra-passo-escura: rgb(0, 0, 0, 0.5); /* Sombra escura */
+    --sombra-neo-clara: rgba(255, 255, 255, 0.7); /* Sombra clara neomorfismo */
+    --sombra-neo-escura: rgba(0, 0, 0, 0.8); /* Sombra escura neomorfismo */
+    --texto-escuro: #0C0101; /* Texto escuro */
+    --borda: #313A3C; /* Cor da borda */
+    --erro: #D40000; /* Cor para mensagens de erro */
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margem padrão */
+    font-family: "Noto Sans", sans-serif; /* Define fonte padrão */
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Rolagem suave */
 }
 
 body{
-    color: var(--texto-escuro);
-    background-color: var(--branco);
+    color: var(--texto-escuro); /* Cor do texto principal */
+    background-color: var(--branco); /* Fundo branco */
 }
 
 .container-login {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 100vh;
+    display: grid; /* Usa grid layout */
+    grid-template-columns: 1fr 2fr; /* Divide em duas colunas */
+    height: 100vh; /* Altura total da tela */
 }
 
 /* LADO ESQUERDO */
 .painel-esquerdo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: var(--fundo);
-    color: var(--branco);
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin: 50px; /* Margem externa */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza texto */
+    background-color: var(--fundo); /* Fundo escuro */
+    color: var(--branco); /* Texto branco */
 }
 
 .logo {
-    width: 50%;
-    margin: 50px 0 10px;
+    width: 50%; /* Largura da logo */
+    margin: 50px 0 10px; /* Margem acima e abaixo */
 }
 
 .descricao {
-    margin: 0 0 60px;
-    font-size: 0.9em;
-    font-weight: 300;
+    margin: 0 0 60px; /* Margem abaixo */
+    font-size: 0.9em; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
 }
 
 .link-cadastro {
-    color: var(--amarelo);
-    font-weight: 600;
-    margin-top: 50px;
-    text-decoration: underline;
+    color: var(--amarelo); /* Cor do link */
+    font-weight: 600; /* Negrito */
+    margin-top: 50px; /* Margem acima */
+    text-decoration: underline; /* Sublinhado */
 }
 
 /* LADO DIREITO */
 .painel-direito {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-    padding: 40px 60px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza texto */
+    gap: 50px; /* Espaço entre itens */
+    padding: 40px 60px; /* Espaçamento interno */
 }
 
 .cabecalho-login {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Margem abaixo */
 }
 
 .titulo-login {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 2rem; /* Tamanho do título */
+    margin: 0; /* Remove margem */
 }
 
 .subtitulo-login {
-    margin: 8px 0 0;
-    color: #333333;
+    margin: 8px 0 0; /* Margem acima */
+    color: #333333; /* Cor do subtítulo */
 }
 
 .form-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    gap: 16px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 50%; /* Largura do formulário */
+    gap: 16px; /* Espaço entre campos */
 }
 
 label {
-    font-weight: 600;
-    align-self: flex-start;
+    font-weight: 600; /* Negrito */
+    align-self: flex-start; /* Alinha ao início */
 }
 
 input {
-    padding: 12px;
-    border: 1px solid var(--borda);
-    border-radius: 10px;
-    font-size: 1rem;
-    width: 100%;
+    padding: 12px; /* Espaçamento interno */
+    border: 1px solid var(--borda); /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    width: 100%; /* Ocupa toda largura */
 }
 
 .campo-senha {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Ocupa toda largura */
+    position: relative; /* Permite posicionamento absoluto */
 }
 
 .icone-olho {
-    position: absolute;
-    right: 5%;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute; /* Posiciona absolutamente */
+    right: 5%; /* Distância da direita */
+    cursor: pointer; /* Cursor de ponteiro */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta centralização */
 }
 
 .botao-login {
-    background-color: var(--fundo);
-    color: var(--amarelo);
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 1rem;
-    width: 100%;
-    transition: background-color 0.1s, color 0.1s;
+    background-color: var(--fundo); /* Fundo do botão */
+    color: var(--amarelo); /* Cor do texto */
+    padding: 14px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-weight: 700; /* Negrito */
+    font-size: 1rem; /* Tamanho da fonte */
+    width: 100%; /* Ocupa toda largura */
+    transition: background-color 0.1s, color 0.1s; /* Transição suave */
 }
 
 .botao-login:hover {
-    background-color: #26394E;
-    cursor: pointer;
+    background-color: #26394E; /* Muda cor de fundo */
+    cursor: pointer; /* Cursor de ponteiro */
 }
 
 .link-esqueci {
-    text-align: center;
-    font-size: 0.9rem;
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--texto-escuro);
-    margin-top: 10px;
+    text-align: center; /* Centraliza texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    text-decoration: none; /* Sem sublinhado */
+    font-weight: 600; /* Negrito */
+    color: var(--texto-escuro); /* Cor do texto */
+    margin-top: 10px; /* Margem acima */
 }
 
 .logo-resp {
-    display: none;
+    display: none; /* Esconde logo responsiva */
 }
 
-
 /* Responsividade - media query */
-
 @media (max-width: 900px) {
    .container-login {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr /* Altera para uma coluna */
    } 
 
    .painel-esquerdo {
-    margin: 0;
+    margin: 0; /* Remove margem */
    }
 
    .descricao {
-        font-size: 1.1em;
-        max-width: 55%;
-
+        font-size: 1.1em; /* Aumenta fonte */
+        max-width: 55%; /* Limita largura */
     }
 
     .logo {
-        display: none;
+        display: none; /* Esconde logo */
     }
 
     .logo-resp {
-        display: inline;
-        margin-bottom: 50px;
+        display: inline; /* Exibe logo responsiva */
+        margin-bottom: 50px; /* Margem abaixo */
     }
 
     .forn-login {
-        width: 70%;
+        width: 70%; /* Aumenta largura do formulário */
     }
 }

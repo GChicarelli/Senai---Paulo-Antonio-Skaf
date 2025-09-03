@@ -1,48 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML, idioma português do Brasil -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurum Lab - Login</title>
-  <link rel="stylesheet" href="CSS/cadastro.css">
-  <link rel="stylesheet" href="CSS/global.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <title>Aurum Lab - Login</title> <!-- Título da página exibido na aba do navegador -->
+  <link rel="stylesheet" href="CSS/cadastro.css"> <!-- Importa o CSS de cadastro -->
+  <link rel="stylesheet" href="CSS/global.css"> <!-- Importa o CSS global -->
 </head>
 <body>
     <!-- Seção cebeçalho -->
-    <header class="cabecalho">
-        <div class="cadastro">
-            <h1>Cadastro</h1>
-            <p class="cadastro">Crie uma nova conta de usuário para o Aurum Lab</p>
+    <header class="cabecalho"> <!-- Cabeçalho da página -->
+        <div class="cadastro"> <!-- Container do título e descrição do cadastro -->
+            <h1>Cadastro</h1> <!-- Título principal -->
+            <p class="cadastro">Crie uma nova conta de usuário para o Aurum Lab</p> <!-- Descrição do cadastro -->
         </div>
-        <div class="logo">
-            <img src="assets/img/icone-logo.svg" alt="Logotipo Aurum Lab" class="logo">
+        <div class="logo"> <!-- Container da logo -->
+            <img src="assets/img/icone-logo.svg" alt="Logotipo Aurum Lab" class="logo"> <!-- Imagem da logo -->
         </div>
     </header>
 
     <!-- Seção do cadastro -->
-     <main>
+     <main> <!-- Conteúdo principal da página -->
 
-        <form class="cadastro-escrita">
-            <div class="formulario">
-                <div>
-                    <label>Nome completo</label>
-                    <input type="text" id="nome" placeholder="Seu nome" required>
-                    <label>E-mail</label>
-                    <input type="email" id="Email" placeholder="email@email.com" required>
+        <form class="cadastro-escrita"> <!-- Formulário de cadastro -->
+            <div class="formulario"> <!-- Container dos campos do formulário -->
+                <div> <!-- Primeira coluna de campos -->
+                    <label>Nome completo</label> <!-- Label do campo nome -->
+                    <input type="text" id="nome" placeholder="Seu nome" required> <!-- Campo de texto para nome -->
+                    <label>E-mail</label> <!-- Label do campo email -->
+                    <input type="email" id="Email" placeholder="email@email.com" required> <!-- Campo de texto para email -->
                 </div>
                 
-                <div>
-                    <label>Senha</label>
-                    <input type="password" id="senha" placeholder="*********" required>
-                    <labelh3>Confirmar senha</label>
-                    <input type="password" id="senha" placeholder="*********" required>
+                <div> <!-- Segunda coluna de campos -->
+                    <label>Senha</label> <!-- Label do campo senha -->
+                    <input type="password" id="senha" placeholder="*********" required> <!-- Campo de senha -->
+                    <label>Confirmar senha</label> <!-- Label do campo confirmar senha (erro de tag, deveria ser <label>) -->
+                    <input type="password" id="senha" placeholder="*********" required> <!-- Campo de confirmação de senha -->
                 </div>
             </div>
 
-            <button class="botao-login" type="submit" >ENTRAR</button>
+            <button class="botao-login" type="submit" >ENTRAR</button> <!-- Botão de envio do formulário -->
         </form>
 
-        <a href="index.html" class="voltar">Voltar</a>
+        <a href="index.html" class="voltar">Voltar</a> <!-- Link para voltar à página inicial -->
 
      </main>
 
@@ -50,4 +50,4 @@
 
 
 </body>
-</html>
+</html> <!-- Fim do documento HTML -->
