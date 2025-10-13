@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemantica - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="teste.css">
+    
+</head>
+
+<body>
+    <header class="main-header">
+        <button class="hamburger active-button"></button>
+        <a href="#" class="barra-topo">
+            <!-- Recomendo usar um caminho relativo ou URL completa para a logo -->
+            <img src="ArquivosCinemantica/logo.png" alt="Logotipo Cinemantica" class="logo">
+        </a>
+        <nav class="main-nav">
+            <div class="acoes-header">
+                <div class="barra-pesquisa">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Busque aqui...">
+                </div>
+                <div class="acoes-usuario">
+                    <div class="notificacao-usuario">
+                        <i class="fas fa-bell action-icon"></i>
+                        <div class="notification-dot"></div>
+                    </div>
+                    <!-- Container para o ícone de usuário e o dropdown -->
+                    <div class="user-profile-container">
+                        <div class="icone-usuario" id="user-icon">
+                            <i class="fas fa-user profile-icon"></i>
+                        </div>
+                        <!-- Dropdown que aparece ao clicar -->
+                        <div class="user-dropdown" id="user-dropdown">
+                            <a href="login.html">Fazer login</a>
+                            <a href="cadastro.html">Criar conta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="seguindo.html"><i class="fas fa-users"></i> Seguindo</a></li>
+                    <li><a href="perfil.html"><i class="fas fa-user"></i> Perfil</a></li>
+                </ul>
+            </nav>
+            <div class="following-section">
+                <div class="following-header">
+                    <h3>Seguindo</h3>
+                    <span>Assistidos</span>
+                </div>
+                <ul class="following-list">
+                    <li class="following-item">
+                        <img src="https://placehold.co/40x40/e0e0e0/000?text=U1" alt="Avatar do usuário">
+                        <span>User 1</span>
+                        <span class="watched-count">125</span>
+                    </li>
+                    <li class="following-item">
+                        <img src="https://placehold.co/40x40/e0e0e0/000?text=U2" alt="Avatar do usuário">
+                        <span>User 2</span>
+                        <span class="watched-count">12</span>
+                    </li>
+                    <li class="following-item">
+                        <img src="https://placehold.co/40x40/e0e0e0/000?text=U3" alt="Avatar do usuário">
+                        <span>User 3</span>
+                        <span class="watched-count">22</span>
+                    </li>
+                    <li class="following-item">
+                        <img src="https://placehold.co/40x40/e0e0e0/000?text=U4" alt="Avatar do usuário">
+                        <span>User 4</span>
+                        <span class="watched-count">37</span>
+                    </li>
+                    <li class="following-item">
+                        <img src="https://placehold.co/40x40/e0e0e0/000?text=U5" alt="Avatar do usuário">
+                        <span>User 5</span>
+                        <span class="watched-count">52</span>
+                    </li>
+                </ul>
+                <button class="see-more-btn">
+                    <i class="fas fa-chevron-down"></i> Ver mais
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="highlights-section">
+                <h2>Destaques</h2>
+                <div class="movie-grid">
+                    <!-- Card de Filme 1 -->
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repetir o card para outros filmes -->
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/f1.jpg" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/treinar.dragao.jpg" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/filme_1.jpg" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <img src="ArquivosCinemantica/Bailarina.png" alt="Pôster do Filme Bailarina">
+                        <div class="movie-card-content">
+                            <h3>Bailarina</h3>
+                            <div class="movie-info">
+                                <span class="imdb-rating">
+                                    <i class="fab fa-imdb"></i> 6.9
+                                </span>
+                                <span class="user-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
