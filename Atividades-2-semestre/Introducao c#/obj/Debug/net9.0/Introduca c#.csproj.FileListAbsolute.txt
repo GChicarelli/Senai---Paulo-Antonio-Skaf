@@ -1,0 +1,14 @@
+C:\Users\53695322810\Desktop\Introducao c#\bin\Debug\net9.0\Introduca c#.exe
+C:\Users\53695322810\Desktop\Introducao c#\bin\Debug\net9.0\Introduca c#.deps.json
+C:\Users\53695322810\Desktop\Introducao c#\bin\Debug\net9.0\Introduca c#.runtimeconfig.json
+C:\Users\53695322810\Desktop\Introducao c#\bin\Debug\net9.0\Introduca c#.dll
+C:\Users\53695322810\Desktop\Introducao c#\bin\Debug\net9.0\Introduca c#.pdb
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.AssemblyInfoInputs.cache
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.AssemblyInfo.cs
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.csproj.CoreCompileInputs.cache
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.dll
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\refint\Introduca c#.dll
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.pdb
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\Introduca c#.genruntimeconfig.cache
+C:\Users\53695322810\Desktop\Introducao c#\obj\Debug\net9.0\ref\Introduca c#.dll
