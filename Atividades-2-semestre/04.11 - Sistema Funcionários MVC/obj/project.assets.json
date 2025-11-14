@@ -4716,11 +4716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\53695322810\\Desktop\\Senai---Paulo-Antonio-Skaf\\Atividades-2-semestre\\Atividade semestre 2\\AtividadesSenai2Semestre\\C#\\Atividades\\Atividade 04.11 - Sistema Funcionários MVC\\Atividade 04.11 - Sistema Funcionários MVC.csproj",
+      "projectUniqueName": "C:\\Users\\53695322810\\Desktop\\Senai---Paulo-Antonio-Skaf\\Atividades-2-semestre\\Atividade 04.11 - Sistema Funcionários MVC\\Atividade 04.11 - Sistema Funcionários MVC.csproj",
       "projectName": "Atividade 04.11 - Sistema Funcionários MVC",
-      "projectPath": "C:\\Users\\53695322810\\Desktop\\Senai---Paulo-Antonio-Skaf\\Atividades-2-semestre\\Atividade semestre 2\\AtividadesSenai2Semestre\\C#\\Atividades\\Atividade 04.11 - Sistema Funcionários MVC\\Atividade 04.11 - Sistema Funcionários MVC.csproj",
+      "projectPath": "C:\\Users\\53695322810\\Desktop\\Senai---Paulo-Antonio-Skaf\\Atividades-2-semestre\\Atividade 04.11 - Sistema Funcionários MVC\\Atividade 04.11 - Sistema Funcionários MVC.csproj",
       "packagesPath": "C:\\Users\\53695322810\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\53695322810\\Desktop\\Senai---Paulo-Antonio-Skaf\\Atividades-2-semestre\\Atividade semestre 2\\AtividadesSenai2Semestre\\C#\\Atividades\\Atividade 04.11 - Sistema Funcionários MVC\\obj\\",
+      "outputPath": "C:\\Users\\53695322810\\Desktop\\Senai---Paulo-Antonio-Skaf\\Atividades-2-semestre\\Atividade 04.11 - Sistema Funcionários MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\53695322810\\AppData\\Roaming\\NuGet\\NuGet.Config"
