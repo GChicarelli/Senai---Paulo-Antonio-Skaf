@@ -1,0 +1,119 @@
+/* Importa a fonte Noto Sans do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Define variáveis de cor e sombra para o tema */
+:root {
+    --fundo: #132437; /* Cor de fundo principal */
+    --bg-home:#010300; /* Cor de fundo secundária */
+    --linha-decorativa:#C7CDD6; /* Cor de linhas decorativas */
+    --texto-suave:#B3C0CF; /* Cor de texto secundário */
+    --branco: #ffffff; /* Branco */
+    --amarelo: #F7C13C; /* Amarelo destaque */
+    --borda-suave: rgba(255, 255, 255 0.2); /* Borda suave */
+    --sombra-passo-clara: rgba(145, 145, 145, 0.2); /* Sombra clara */
+    --sombra-passo-escura: rgb(0, 0, 0, 0.5); /* Sombra escura */
+    --sombra-neo-clara: rgba(255, 255, 255, 0.7); /* Sombra clara neomorfismo */
+    --sombra-neo-escura: rgba(0, 0, 0, 0.8); /* Sombra escura neomorfismo */
+    --texto-escuro: #0C0101; /* Texto escuro */
+    --borda: #313A3C; /* Cor da borda */
+    --erro: #D40000; /* Cor para mensagens de erro */
+}
+
+/* Aplica box-sizing para todos os elementos e define fonte padrão */
+* {
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margem padrão */
+    font-family: "Noto Sans", sans-serif; /* Define fonte padrão */
+}
+
+/* Estiliza o cabeçalho da página */
+header {
+    background-color: var(--fundo); /* Fundo do cabeçalho */
+    color: var(--branco); /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+    margin: 20px; /* Margem externa */
+    gap: 60px; /* Espaço entre itens */
+}
+
+/* Estiliza os labels dos inputs */
+label {
+    font-weight: 600; /* Negrito */
+    align-self: flex-start; /* Alinha ao início */
+}
+
+/* Estiliza os campos de input */
+input {
+    padding: 12px; /* Espaçamento interno */
+    border: 1px solid var(--borda); /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    width: 100%; /* Ocupa toda largura */
+    margin: 20px 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o formulário principal */
+form {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+/* Container do formulário, organiza os campos lado a lado */
+.formulario {
+    display: flex; /* Usa flexbox */
+    flex-direction: row; /* Organiza em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 80%; /* Largura de 80% */
+    gap: 60px; /* Espaço entre itens */
+    margin: 100px 0; /* Margem acima e abaixo */
+}
+
+/* Botão de login/cadastro */
+.botao-login {
+    background-color: var(--fundo); /* Fundo do botão */
+    color: var(--amarelo); /* Cor do texto */
+    padding: 14px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-weight: 700; /* Negrito */
+    font-size: 1rem; /* Tamanho da fonte */
+    width: 45%; /* Largura de 45% */
+    transition: background-color 0.1s, color 0.1s; /* Transição suave */
+}
+
+/* Efeito hover no botão de login */
+.botao-login:hover {
+    background-color: #26394E; /* Muda cor de fundo */
+    cursor: pointer; /* Muda cursor para ponteiro */
+}
+
+/* Estiliza o botão/link de voltar */
+.voltar {
+    color: var(--fundo); /* Cor do texto */
+    align-items: center; /* Centraliza verticalmente */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-weight: 600; /* Negrito */
+    margin-top: 20px; /* Margem acima */
+    margin: 45px; /* Margem geral */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+   .container-login {
+    grid-template-columns: 1fr /* Altera para uma coluna */
+   }
+ 
+.formulario {
+    flex-direction:column; /* Altera para coluna */
+    gap: 0px; /* Remove espaço entre itens */
+    margin: 30px 0; /* Margem reduzida */
+}
+}
