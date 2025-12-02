@@ -1,4 +1,4 @@
-.container-login {
+.container-cadastro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
@@ -49,12 +49,12 @@
 }
 
 
-.cabecalho-login {
+.cabecalho-cadastro {
     font-weight: 1000;
     font-size: 1.6rem;
 }
 
-.form-login {
+.form-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +147,7 @@ input[type="checkbox"] {
     font-weight: 300;
 }
 
-.botao-login {
+.botao-cadastro {
     background-color: var(--vermelho);
     color: white;
     padding: 15px;
@@ -158,7 +158,7 @@ input[type="checkbox"] {
     width: 100%;
 }
 
-.botao-login:hover {
+.botao-cadastro:hover {
     background-color: #781010;
     cursor: pointer;
 }
@@ -187,7 +187,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width:770px) {
-    .container-login {
+    .container-cadastro {
         grid-template-columns: 1fr;
     }
 
@@ -208,7 +208,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width:426px) {
-    .cabecalho-login {
+    .cabecalho-cadastro {
         font-size: 1.3rem;
     }
 
